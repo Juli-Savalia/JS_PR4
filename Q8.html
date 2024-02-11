@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q8</title>
+</head>
+
+<body>
+    <!--. Write a JavaScript program to create basic calculator using switch case. (simple function use)Ex. User input a,b and select choice + , - , * , /  -->
+    <script type="text/javascript">
+        function Arithmetic() {
+            var a = parseInt(prompt("Enter the value of A :-"));
+            var b = parseInt(prompt("Enter the value of B :-"));
+            var ch = prompt("choose any operators through which you want to perform operation + , -  , * ,  /  :-");
+            var ans;
+            switch (ch) {
+                case "+":
+                    ans = a + b;
+                    document.write(`<h2>Your addition of ${a} & ${b} is ${ans}</h2>`);
+                    break;
+
+                case "-":
+                    ans = a - b;
+                    document.write(`<h2>Your Substraction of ${a} & ${b} is ${ans}</h2>`);
+                    break;
+
+                case "*":
+                    ans = a * b;
+                    document.write(`<h2>Your Multiplication of ${a} & ${b} is ${ans}</h2>`);
+                    break;
+
+                case "/":
+                    ans = a / b;
+                    document.write(`<h2>Your Division of ${a} & ${b} is ${ans}</h2>`);
+                    break;
+            }
+        }
+
+
+        Arithmetic();
+    </script>
+</body>
+
+</html>

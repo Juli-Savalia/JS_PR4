@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q2</title>
+</head>
+<body>
+    <!-- Write a JavaScript program to find which number is greater in 4 numbers using nested if else. (using simple function) -->
+
+    <script type="text/javascript">
+         function maxno(a,b,c,d)
+         {
+            if(a>b)
+            {
+                if(a>c)
+                {
+                    if(a>d)
+                    {
+                        document.write("<h2>A is max</h2>");
+                    }
+                    else{
+                        document.write("<h2>D is max</h2>");
+                    }
+                }
+                else
+                {
+                    if(c>d)
+                    {
+                        document.write("<h2>C is max</h2>");
+                    }
+                    else
+                    {
+                        document.write("<h2>D is max</h2>");
+                    }
+                }
+            }
+            else
+            {
+                if(b>c)
+                {
+                    if(b>d)
+                    {
+                        document.write("<h2>B is max</h2>");
+                    }
+                    else
+                    {
+                        document.write("<h2>D is max</h2>");
+                    }
+                }
+                else
+                {
+                    if(c>d)
+                    {
+                        document.write("<h2>C is max</h2>");
+                    }
+                    else
+                    {
+                        document.write("<h2>D is max</h2>");
+                    }
+                }
+            }
+         }
+        var a = parseInt(prompt("Enter value of A:- "));
+        var b = parseInt(prompt("Enter value of B:- "));
+        var c = parseInt(prompt("Enter value of C:- "));
+        var d = parseInt(prompt("Enter value of D:- "));
+        maxno(a,b,c,d);
+    </script>
+</body>
+</html>
